@@ -62,4 +62,9 @@ ORDER BY Priority; -- Lower numbers (higher priority) will appear first
 UPDATE Tasks
 SET IsCompleted = 1
 WHERE TaskID = 1;
-```
+
+-- --- DELETE Query (Removing data) ---
+-- Delete a task that is completed
+DELETE FROM Tasks
+WHERE IsCompleted = 1;
+
